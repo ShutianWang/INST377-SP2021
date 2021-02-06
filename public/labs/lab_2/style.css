@@ -82,7 +82,7 @@ h1 {
 .header img {
   display: block;
   height: 60px;
-  padding-top: 20.15px;
+  padding-top: 20px;
 }
 
 nav {
@@ -94,7 +94,7 @@ nav {
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 10;
   overflow: hidden;
   flex: 2;
   display: flex;
@@ -129,6 +129,7 @@ nav a, nav span {
 
 .section {
   flex: 4;
+  text-align: center;
 }
 
 .aside {
@@ -151,11 +152,11 @@ nav a, nav span {
 .aside img {
   width: 100%;
   height: auto;
-  padding: 10px;
-  text-align: right;
-  width: 100px;
+  padding: 2px;
+  text-align: justify;
+  width: 200px;
   box-sizing: border-box;
-  margin: 5px auto; 
+  margin: 2px auto; 
 }
 
 .footer {
