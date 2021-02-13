@@ -1,9 +1,10 @@
 body {
     padding: 10px;
+    position: center;
   }
   
   .carousel {
-    position: relativecenter;
+    position: center;
     width: 398px;
     padding: 10px 40px;
     border: 1px solid rgb(201, 153, 201);
@@ -14,7 +15,7 @@ body {
   .carousel img {
     width: 130px;
     height: 130px;
-    /* make it block to remove space around images */
+    
     display: block;
   }
   
@@ -60,7 +61,7 @@ body {
     padding: 0;
     list-style: none;
     transition: margin-left 250ms;
-    /* remove white-space between inline-block'ed li */
+
     font-size: 0;
   }
   
