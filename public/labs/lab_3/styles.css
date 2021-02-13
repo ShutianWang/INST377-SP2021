@@ -1,2 +1,69 @@
-/* Add some css styles based on the tutorial at javascript.info: introduction to browser events
- https://javascript.info/introduction-browser-events */
+body {
+    padding: 10px;
+  }
+  
+  .carousel {
+    position: relativecenter;
+    width: 398px;
+    padding: 10px 40px;
+    border: 1px solid rgb(201, 153, 201);
+    border-radius: 15px;
+    background: rgb(235, 164, 219);
+  }
+  
+  .carousel img {
+    width: 130px;
+    height: 130px;
+    /* make it block to remove space around images */
+    display: block;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 60px;
+    padding: 0;
+    background: #ddd;
+    border-radius: 15px;
+    border: 1px solid rgb(248, 238, 238);
+    font-size: 24px;
+    line-height: 24px;
+    color: rgb(202, 189, 189);
+    display: block;
+  }
+  
+  .arrow:focus {
+    outline: none;
+  }
+  
+  .arrow:hover {
+    background: rgb(253, 240, 240);
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 7px;
+  }
+  
+  .next {
+    right: 7px;
+  }
+  
+  .gallery {
+    width: 390px;
+    overflow: hidden;
+  }
+  
+  .gallery ul {
+    height: 130px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    /* remove white-space between inline-block'ed li */
+    font-size: 0;
+  }
+  
+  .gallery li {
+    display: inline-block;
+  }
