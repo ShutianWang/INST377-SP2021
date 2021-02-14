@@ -1,8 +1,8 @@
  /* label the images, just for convenience, to visually track them */
  let i = 1;
-    for(let li of carousel.querySelectorAll('li')) {
-      li.style.position = 'relative';
-      li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
+for(let li of carousel.querySelectorAll('li')) {
+    li.style.position = 'relative';
+    li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
       i++;
     }
 
@@ -15,7 +15,7 @@
 
     let position = 0; // ribbon scroll position
 
-    carousel.querySelector('.prev').onclick = function() {
+    carousel.querySelector('.next').onclick = function() {
       // shift left
       position += width * count;
       // can't move to the left too much, end of images
@@ -23,7 +23,7 @@
       list.style.marginLeft = position + 'px';
     };
 
-    carousel.querySelector('.next').onclick = function() {
+    carousel.querySelector('.prev').onclick = function() {
       // shift right
       position -= width * count;
       // can only shift the ribbbon for (total ribbon length - visible count) images
