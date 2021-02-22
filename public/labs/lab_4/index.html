@@ -8,59 +8,49 @@
     <header class='speaker-form-header'>
       <h1>Shutian Wang's Lab 4</h1>
     </header>
-    <form action='' method='get' class='speaker-form'>
-
-    <div class='form-row'>
-        <label for='first-name'>First Name</label>
-        <input id='first-name' name='first-name' type='text'/>
-    </div>
-
-    <div class='form-row'>
-        <label for='last-name'>Last Name</label>
-        <input id='last-name' name='last-name' type='text'/>
-    </div>
-   
-    <div class='form-row'>
-        <label for='email'>Email</label>
-        <input id='email' name='email' type='text'/>
-    </div>
-    
-    <div class='form-row'>
-        <label for='phone'>Phone</label>
-        <input id='phone' name='phone' type='text'/>
-    </div>
-    
-    <div class='form-row'>
-        <label for='abstract'>Text Field</label>
-        <textarea id='abstract' 
-                  name='abstract' 
-                  placeholder='This is some default message text.'></textarea> 
-    </div>
-
-    <fieldset class='legacy-form-row'>
-        <legend>Age</legend>
-        <input id='talk-type-1'
-               name='talk-type'
-               type='radio'
-               value='main-stage' />
-        <label for='talk-type-1' class='radio-label'>18-35</label> 
-        <input id='talk-type-2'
-               name='talk-type'
-               type='radio'
-               value='main-stage' />
-        <label for='talk-type-2' class='radio-label'>35-50</label> 
-        <input id='talk-type-3'
-               name='talk-type'
-               type='radio'
-               value='workshop'
-               checked />
-        <label for='talk-type-3' class='radio-label'>50-65</label>      
-    </fieldset>
-
-    <div class='form-row'>
-        <button>SUBMIT FORM</button>
-      </div>
-
-    </form>
+    <form>
+        <ul class="flex-outer">
+          <li>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+          </li>
+          <li>
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" type='text'/>
+          </li>
+          <li>
+            <label for="phone">Phone</label>
+            <input type='tel' id="phone" type='text'/>
+          </li>
+          <li>
+            <label for="message">Text field</label>
+            <textarea rows="6" id="message" placeholder="This is some default message text." type='text'></textarea>
+          </li>
+          <li>
+            <p>Age</p>
+            <ul class="flex-inner">
+        <li>
+          <input type="checkbox" id="twenty-to-twentynine">
+          <label for="twenty-to-twentynine">18-35</label>
+        </li>
+        <li>
+          <input type="checkbox" id="thirty-to-thirtynine">
+          <label for="thirty-to-thirtynine">35-50</label>
+        </li>
+        <li>
+            <input type="checkbox" id="thirty-to-thirtynine">
+            <label for="thirty-to-thirtynine">50-65</label>
+          </li>
+      </ul>
+          </li>
+          <li>
+            <button type="submit">SUBMIT FORM</button>
+          </li>
+        </ul>
+      </form>
   </body>
 </html>

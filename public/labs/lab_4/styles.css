@@ -42,7 +42,21 @@
     margin: 0 0 40px 0;
 }
 
-.form-row {
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+
+
+.flex-outer {
     margin-bottom: 40px;
     display: flex;
     justify-content: flex-start;
@@ -50,20 +64,38 @@
     flex-wrap: wrap
 }
 
-.form-row input[type='text']{
+.flex-outer input[type='text'] {
     background-color: #ffffff;
     border: 1px solid #D6D9DC;
     border-radius: 3px;
-    width: 60%;
+    width: 150%;
     padding: 7px;
     font-size: 14px;
 }
 
-.form-row label {
+.flex-outer input[type='email']{
+    background-color: #ffffff;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 150%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.flex-outer input[type='tel']{
+    background-color: #ffffff;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 150%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.flex-outer label {
     margin-bottom: 15px;
 }
 
-.form-row textarea {
+.flex-outer textarea {
     font-family: "Helvetica", "Arial", sans-serif;
     font-size: 16px;
   
@@ -72,103 +104,74 @@
   
     min-height: 200px;
     margin-bottom: 10px;
-    width: 60%;
+    width: 150%;
     padding: 7px;
     resize: none;
-  }
-  
-  .form-row .instructions {
-    color: #D6D9DC;
-    font-size: 14px;
-    margin-bottom: 30px;
-  }
+}
 
-.legacy-form-row {
-    border: none;
-    margin-bottom: 40px;
+.flex-outer li button {
+  padding: 10px 30px;
+  border: none;
+  color: #FFFFFF;
+  background-color: #5995DA;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
 }
-.legacy-form-row legend {
-    margin-bottom: 15px;
-}
-.legacy-form-row .radio-label {
-    display: block;
-    font-size: 16px;
-    padding: 0 20px 0 10px;
-}
-.legacy-form-row input[type='radio'] {
-    margin-top: 2px;
-}
-.legacy-form-row .radio-label,
-.legacy-form-row input[type='radio'] {
-    float: left;
-}
-.form-row button {
-    font-size: 18px;
-    font-weight: bold;
-
-    width: 15%;
-  
-    color: #FFFFFF;
-    background-color: #5995DA;
-  
-    border: none;
-    border-radius: 3px;
-  
-    padding: 10px 30px;
-    cursor: pointer;
-  }
-  
-  .form-row button:hover {
+.flex-outer button:hover {
     background-color: #76AEED;
   }
   
-  .form-row button:active {
+  .flex-outer button:active {
     background-color: #407FC7;
   }
 
+.flex-inner li {
+  width: 100px;
+}
+.flex-inner {
+    justify-content: safe;
+}
 
 @media only screen and (mid-width: 700px) {
-.speaker-form-header
-.speaker-form {
-    width: 600px;
-}
-.form-row {
-    flex-direction: row;
-    align-items: flex-start; 
-    margin-bottom: 20px;
-}
-.form-row input[type='text'] {
-    width: 250px;
-    height: install
-}
-.form-row label {
-    text-align: right;
-    width: 120px;
-    margin-top: 7px;
-    padding-right: 20px;
-}
-.form-row .checkbox-label {
-    margin-bottom: 0;
-}
-
-.form-row .instructions {
-      margin-left: 120px;
-}
-  
-.legacy-form-row {
-    margin-bottom: 10px;
-}
-.legacy-form-row legend {
-    width: 120px;
-    text-align: right;
-    padding-right: 20px;
-}
-.legacy-form-row legend {
-    float: left;
-}
-.photo-grid {
-    flex-direction: colum;
-}
-.form-row button {
-    margin-left: 120px;
-}
+    .speaker-form-header
+    .speaker-form {
+        width: 600px;
+    }
+    .flex-outer {
+        flex-direction: row;
+        align-items: flex-start; 
+        margin-bottom: 20px;
+    }
+    .form-row input[type='text'] {
+        width: 250px;
+        height: install
+    }
+    .form-row input[type='email'] {
+        width: 250px;
+        height: install
+    }
+    .form-row input[type='tel'] {
+        width: 250px;
+        height: install
+        
+    }        
+    .flex-outer label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+    .flex-outer .checkbox-label {
+        margin-bottom: 0;
+        width: auto;
+    }
+    
+    .flex-outer .instructions {
+          margin-left: 120px;
+    }
+      
+    .flex-outer button {
+        margin-left: 120px;
+    }
+    
