@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang='en'>
   <head>
     <meta charset='UTF-8'/>
@@ -5,53 +6,51 @@
     <link rel='stylesheet' href='styles.css'/>
   </head>
   <body>
-    <header class='speaker-form-header'>
+    <<div class='header'>
       <h1>Shutian Wang's Lab 4</h1>
-    </header>
-    <form>
-      <ul class="flex-outer">
-        <li>
-          <label for="first-name">First Name</label>
-          <input type="text" id="first-name">
-        </li>
-        <li>
-          <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" >
-        </li>
-        <li>
-          <label for="email">Email</label>
-          <input type="email" id="email">
-        </li>
-        <li>
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone">
-        </li>
-        <li>
-          <label for="message">Message</label>
-          <textarea rows="6" id="message" placeholder="This is some default message text."></textarea>
-        </li>
-        <li>
-          <p>Age</p>
-          <ul class="flex-inner">
-      <li>
-        <input type="checkbox" id="twenty-to-twentynine">
-        <label for="twenty-to-twentynine">15-35</label>
-      </li>
-      <li>
-        <input type="checkbox" id="thirty-to-thirtynine">
-        <label for="thirty-to-thirtynine">35-50</label>
-      </li>
-      <li>
-        <input type="checkbox" id="thirty-to-thirtynine">
-        <label for="thirty-to-thirtynine">50-65</label>
-      </li>
-      <!-- more list items here -->
-    </ul>
-        </li>
-        <li>
-          <button type="SUBMIT FORM">Submit</button>
-        </li>
-      </ul>
-    </form>
+    </div>
+
+    <div>
+      <form action="container">
+        <ul class="flex-outer">
+          <li>
+            <label for="firstname">First Name</label>
+            <input type="text" name="first-name" id="firstname">
+          </li>
+          <li>
+          <label for="lastname">Last Name</label>
+          <input type="text" name="last-name" id="lastname">
+          </li>
+          <li>
+            <label for="message">Text Field</label>
+            <textarea name="messagr" rows="10" cols="35"
+            id="message" placeholder="This is some default message text.">
+            </textarea>
+          </li>
+          <li>
+            <p>Age</p>
+            <ul class="flex-inner">
+              <li>
+                <label for="et-to-tf">18-35</label>
+                <input name="age" type="checkbox" id="et-to-tf"/>
+              </li>
+              <li>
+                <label for="tf-to-ff">35-55</label>
+                <input name="age" type="checkbox" id="tf-to-ff"/>
+              </li>
+              <li>
+                <label for="ff-to-sf">55-65</label>
+                <input name="age" type="checkbox" id="ff-to-sf"/>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button name="submit" class="button" id="submit" type="submit">
+              Submit Form
+            </button>
+          </li>
+        </ul>
+      </form>
+    </div>
   </body>
 </html>
