@@ -2,7 +2,7 @@
 <html lang='en'>
   <head>
     <meta charset='UTF-8'/>
-    <title>Shutian Wang's Lab 4</title>
+    <title>Shutian Wang's Lab 5</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -15,23 +15,23 @@
 
 <body>
     <h1 class="title is-3">Shutian Wang's Lab 5</h1>
+    <h2 class="subtitle is-6">Zip Code Food Search</h2>
     <div class="columns" >
-        <div class="columnn">
-        <h2 class="subtitle is-6">Zip Code Food Search</h2>
-    </div>
-
+        <div class="column">
+    <div class='list'>
         <form class='userform'>
-            <div><label class="subtitle is-6 mb-2" for="search" id="search"><label>Search</label></div>
+            <label for="search" id="search">Search</label>
             <input type="text" class='search' name="search" id="search" placeholder="Search for Zip Code...">
-            <div class='submit-button mt-3'><button type="submit" id="submit" name="submit">Submit</button></div>
-        
-            <div>
-                <ul class="results"></ul>
-            </div>
+            <button type="submit" id="submit" name="submit">Submit</button>
         </form>
     </div>
 
-    <div class="columnn">
+    <div>
+        <div id='SearchContainer'>
+    </div>
+       
+    </div>
+    <div class="column">
         <div id="mapid" style="height: 360px;"></div>
 </div>
     <script src='app.js'></script>
