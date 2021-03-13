@@ -2,17 +2,19 @@
 <html lang='en'>
   <head>
     <meta charset='UTF-8'/>
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Shutian Wang's Lab 5</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin=""/>
     <!-- Make sure you put this AFTER Leaflet's CSS -->
- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
  crossorigin=""></script>
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma-rtl.min.css">
- <script src='app.js'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma-rtl.min.css">
+    <link rel="stylesheet" type= 'text/css' href="style.css">
+    <script type="text/javascript" src="app.js"></script>
 </head>
 
 <body>
@@ -22,9 +24,9 @@
         <div class="column">
     <div class='list'>
         <form class='userform'>
-            <label for="search" id="search">Search</label>
-            <b><input type="text" class='search' name="search" id="search" placeholder="Search for Zip Code..."></b>
-            <button type="submit" id="submit" name="submit">Submit</button>
+            <div><label for="search" id="search">Search</label></div>
+            <div><input type="text" class='search' name="search" id="search" placeholder="Search for Zip Code..."></div>
+            <div><button type="submit" id="submit" name="submit">Submit</button></div>
         </form>
     </div>
 
