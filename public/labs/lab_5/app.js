@@ -7,7 +7,7 @@ function mapInit() {
       id: 'mapbox/streets-v11',
       tileSize: 512,
       zoomOffset: -1,
-      accessToken: 'your.mapbox.access.token'
+      accessToken: 'pk.eyJ1Ijoic2h1dGlhbiIsImEiOiJja203NTRyczEwdXV2MnZxbGh0NzRpNjdlIn0.50H81-iDVL2BLaocNhEy_A'
   }).addTo(mymap);
     return map;
   }

@@ -11,6 +11,8 @@
  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
  crossorigin=""></script>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma-rtl.min.css">
+ <script src='app.js'></script>
 </head>
 
 <body>
@@ -21,7 +23,7 @@
     <div class='list'>
         <form class='userform'>
             <label for="search" id="search">Search</label>
-            <input type="text" class='search' name="search" id="search" placeholder="Search for Zip Code...">
+            <b><input type="text" class='search' name="search" id="search" placeholder="Search for Zip Code..."></b>
             <button type="submit" id="submit" name="submit">Submit</button>
         </form>
     </div>
@@ -34,6 +36,5 @@
     <div class="column">
         <div id="mapid" style="height: 360px;"></div>
 </div>
-    <script src='app.js'></script>
 </body>
 </heml>
