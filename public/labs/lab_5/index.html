@@ -1,42 +1,39 @@
 <!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <meta charset='UTF-8'/>
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Shutian Wang's Lab 5</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
- integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
- crossorigin=""></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma-rtl.min.css">
-    <link rel="stylesheet" type= 'text/css' href="style.css">
-    <script type="text/javascript" src="app.js"></script>
-</head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Miguel Ruiz's Cool Map Thingy</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
 
-<body>
-    <h1 class="title is-3">Shutian Wang's Lab 5</h1>
-    <h2 class="subtitle is-6">Zip Code Food Search</h2>
-    <div class="columns" >
-        <div class="column">
-    <div class='list'>
-        <form class='userform'>
-            <div><label for="search" id="search">Search</label></div>
-            <div><input type="text" class='search' name="search" id="search" placeholder="Search for Zip Code..."></div>
-            <div><button type="submit" id="submit" name="submit">Submit</button></div>
-        </form>
-    </div>
+    <body>
 
-    <div>
-        <div id='SearchContainer'>
-    </div>
-       
-    </div>
-    <div class="column">
-        <div id="mapid" style="height: 360px;"></div>
-</div>
-</body>
-</heml>
+            <div class ="columns is-multiline">
+                <div class="column is-half">
+                    <h1>Miguel Ruiz's Lab 5</h1>
+                    <h2>Zipcode Food Search</h2>
+                    <form action="" id="userform" class="userform">
+                        <label for="zip" id="search">Search</label>
+                        <input type="text" name="zip" class="zip" id="zip" placeholder="Enter your zipcode">
+                        <button type="submit">Submit</button>
+                    </form>
+                    <ul class="suggestions"></ul>
+                </div>
+                <div class="column is-half">
+                    <div id="mapid"></div>
+                </div>
+            </div>
+        
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
