@@ -16,13 +16,15 @@ function mapInit() {
 async function dataHandler(mapObjectFromFunction){
    // use your assignment 1 data handling code here
    // and target mapObjectFromFunction to attach markers
-  const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json'
-  const restaurants = [];
+  
+   const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json'
+   const form = document.querySelector('.userform');
+   const suggestions = document.querySelector('.RestaurantList');
+   const restaurants = [];
   
   const request = await fetch(endpoint)
   .then(blob => blob.json())
   .then(data => restaurants.push(...data));
-  
 
 
   function findMatches(wordToMatch, restaurants) {
@@ -74,8 +76,7 @@ function displayMatches(event) {
     //suggestions.innerHTML = html;
 
 
-const form = document.querySelector('.userform')
-const suggestions = document.querySelector('.RestaurantList')
+
 
 
 form.addEventListener('keyup', async(evt) => { evt.preventDefault();
