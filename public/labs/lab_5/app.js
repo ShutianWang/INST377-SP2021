@@ -13,7 +13,7 @@ function mapInit() {
   return map;
 }
 
-async function dataHandler(mapObjectFromFunction){
+async function dataHandler(mapObjectFromFunction) {
    // use your assignment 1 data handling code here
    // and target mapObjectFromFunction to attach markers
   
@@ -63,21 +63,9 @@ function displayMatches(event) {
     suggestions.innerHTML = html;
   }
 
-
      //= matchArray.mapplace => 
-        //return  `<li> 
-        //<span class="name"><b>$place.name</b></span>
-        //<br/>
-        //<span class="category"><b>$place.category</b></span>
-        //<br/>
-        //<address><b>$place.address_line_1</b> 
-        //<br/><b>$place.city, $place.state $place.zip</b></address>
         //</li>`;
     //suggestions.innerHTML = html;
-
-
-
-
 
 form.addEventListener('keyup', async(evt) => { evt.preventDefault();
     displayMatches(evt) });
