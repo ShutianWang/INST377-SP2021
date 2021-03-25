@@ -13,30 +13,28 @@
  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
  crossorigin=""></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma-rtl.min.css">
-    <link rel="stylesheet" type= 'text/css' href="style.css">
+    <link rel="stylesheet" type= 'text/css' href="styles.css">
     <script type="text/javascript" src="app.js"></script>
 </head>
 
 <body>
-    <h1 class="title is-3">Shutian Wang's Lab 5</h1>
-    <h2 class="subtitle is-6">Zip Code Food Search</h2>
-    <div class="columns" >
-        <div class="column is-half">
-    <div class='list'>
-        <form class='userform'>
-            <div><label for="search" id="search">Search</label></div>
-            <div><input type="text" class='search' name="search" id="search" placeholder="Search for Zip Code..."></div>
-            <div><button type="submit" id="submit" name="submit">Submit</button></div>
-        </form>
-    </div>
-
-    <div>
-        <div id='SearchContainer'>
-    </div>
+    <section class="section">
+        <div class="columns">
+            <div class="column is-half">
+                <h1 class="title">Shutian Wang's Lab 5</h1>
+                <h2 class="subtitle">Zip Code Food Search</h2>
+                <div class='list'>
+                <form class='userform'>
+                    <div><label for="search" id="search">Search</label></div>
+                    <div><input type="text" class='search' name="search" id="search" placeholder="Search for Zip Code..."></div>
+                    <div><button type="submit" id="submit" name="submit">Submit</button></div>
+                </form>
+            </div>
        
-    </div>
-    <div class="column is-half">
-        <div id="mapid" style="height: 450px; width: 450px;"></div>
-</div>
+            <div class="column is-half">
+            <div id="mapid"></div>
+            </div>
+        </div>        
+    </section>
 </body>
-</heml>
+</html>

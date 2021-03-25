@@ -10,7 +10,7 @@ function mapInit() {
     accessToken: 'pk.eyJ1Ijoic2h1dGlhbiIsImEiOiJja203NTRyczEwdXV2MnZxbGh0NzRpNjdlIn0.50H81-iDVL2BLaocNhEy_A'
 }).addTo(mymap);
 
-  return map;
+  return mymap;
 }
 
 async function dataHandler(mapObjectFromFunction) {
@@ -23,8 +23,7 @@ async function dataHandler(mapObjectFromFunction) {
    const restaurants = [];
   
   const request = await fetch(endpoint)
-  .then(blob => blob.json())
-  .then(data => restaurants.push(...data));
+  const data = await request.json();
 
 
   function findMatches(wordToMatch, restaurants) {
@@ -46,7 +45,7 @@ function displayMatches(event) {
     matchArray2.forEach((palce) =>{
       const longLat = place.geocoded_column_1.coordinates;
       console.log(longLat);
-      const marker = L.marker([longLat[1], longLat[0]].addTo(mapObjectFromFunction);
+      const marker = L.marker([longLat[1], longLat[0]].addTo(mapObjectFromFunction));
     });
 
     const html = matchArray2.map((place) => {
@@ -63,9 +62,6 @@ function displayMatches(event) {
     suggestions.innerHTML = html;
   }
 
-     //= matchArray.mapplace => 
-        //</li>`;
-    //suggestions.innerHTML = html;
 
 form.addEventListener('keyup', async(evt) => { evt.preventDefault();
     displayMatches(evt) });
